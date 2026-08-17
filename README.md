@@ -49,6 +49,20 @@ settle either. Currently 82 passed, 0 failed, 16 n/a.
 
 `verify/bw_summary.py`, `bw_chroms.py` and `bw_quantum.py` work on any bigWig.
 
+## Data
+
+Deposited at the IGVF Data Portal, one measurement set and one analysis set per target:
+
+| Target | Measurement set | Analysis set |
+|---|---|---|
+| H3K4me3 | [IGVFDS6141QFVR](https://data.igvf.org/measurement-sets/IGVFDS6141QFVR/) | [IGVFDS5465EDQZ](https://data.igvf.org/analysis-sets/IGVFDS5465EDQZ/) |
+| H3K27me3 | [IGVFDS8014KPTJ](https://data.igvf.org/measurement-sets/IGVFDS8014KPTJ/) | [IGVFDS8522VRST](https://data.igvf.org/analysis-sets/IGVFDS8522VRST/) |
+| H3K27ac | [IGVFDS7154HHWN](https://data.igvf.org/measurement-sets/IGVFDS7154HHWN/) | [IGVFDS6938GALL](https://data.igvf.org/analysis-sets/IGVFDS6938GALL/) |
+| IgG | [IGVFDS3000EQWJ](https://data.igvf.org/measurement-sets/IGVFDS3000EQWJ/) | [IGVFDS0089EIMW](https://data.igvf.org/analysis-sets/IGVFDS0089EIMW/) |
+
+The bigWigs under `signal/` are the files in the analysis sets. These records are
+`in progress`, so the links resolve only for signed-in submitters until release.
+
 ## Related
 
 * Data: Zenodo [10.5281/zenodo.15215216](https://doi.org/10.5281/zenodo.15215216)
