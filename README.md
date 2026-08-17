@@ -8,7 +8,7 @@ Eight libraries â€” two replicates each of H3K4me3, H3K27me3, H3K27ac and IgG â€
 depth-normalized bigWig per library.
 
 **`pipeline.sh` is a reconstruction.** These libraries were processed by MSKCC's
-Epigenomics Research Innovation Lab and their script did not survive. The commands are
+Epigenomics Research Innovation Lab. The commands are
 rebuilt from the published methods and from the deposited files; `PIPELINE.md` marks
 every parameter as `[methods]`, `[measured]` or `[open]`, and `verify/` checks that the
 reconstruction accounts for the files.
