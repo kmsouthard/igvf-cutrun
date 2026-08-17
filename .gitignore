@@ -1,0 +1,4 @@
+work/
+*.bw
+*.zip
+__pycache__/

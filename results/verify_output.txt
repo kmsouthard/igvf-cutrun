@@ -1,0 +1,133 @@
+
+8 of 8 bigWigs found in /data1/normantm/southark/aviti/tmp/claude-164011904/-data1-normantm-southark/d6bc36be-78c5-411f-963e-ed089699914d/scratchpad/zenodo/Density_bigwigs_hg38_10mNorm
+
+  PASS  all eight signal files present
+
+RA480-1  H3K4me3 rep1  ->  IGVFFI4865LLEJ
+  PASS  byte-identical to the file on the IGVF portal  [b2c1016d03a3e5c409a9702f87b9624e]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [745,492 intervals]
+  PASS  ragged intervals occur only at contig ends  [32 ragged, 32 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [502,700 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 3.62, 2,762,431 of 6,315,051 = 43.7%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [465 bp; 101 bp reads would give mean 0.41, observed 1.58]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-2  H3K4me3 rep2  ->  IGVFFI9030WSCX
+  PASS  byte-identical to the file on the IGVF portal  [250c127cbea75d021dfcba843a4418e7]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [695,883 intervals]
+  PASS  ragged intervals occur only at contig ends  [48 ragged, 48 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [459,677 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 5.38, 1,858,736 of 5,769,753 = 32.2%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [470 bp; 101 bp reads would give mean 0.41, observed 1.60]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-3  H3K27me3 rep1  ->  IGVFFI3631QNSO
+  PASS  byte-identical to the file on the IGVF portal  [c2f8174c2f786b2966b43a839a0c1da7]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [764,042 intervals]
+  PASS  ragged intervals occur only at contig ends  [22 ragged, 22 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [598,202 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 2.80, 3,571,429 of 7,515,513 = 47.5%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [453 bp; 101 bp reads would give mean 0.41, observed 1.54]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-4  H3K27me3 rep2  ->  IGVFFI1865NTKM
+  PASS  byte-identical to the file on the IGVF portal  [870496dce611679d5b09e89c77c53ad5]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [760,872 intervals]
+  PASS  ragged intervals occur only at contig ends  [24 ragged, 24 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [604,994 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 2.58, 3,875,969 of 7,685,945 = 50.4%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [445 bp; 101 bp reads would give mean 0.41, observed 1.52]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-5  H3K27ac rep1  ->  IGVFFI1472HREP
+  PASS  byte-identical to the file on the IGVF portal  [feec3f221a418eea1035f46cb819bcb2]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [757,717 intervals]
+  PASS  ragged intervals occur only at contig ends  [22 ragged, 22 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [530,068 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 3.09, 3,236,246 of 7,673,653 = 42.2%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [447 bp; 101 bp reads would give mean 0.41, observed 1.52]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-6  H3K27ac rep2  ->  IGVFFI7555NGXG
+  PASS  byte-identical to the file on the IGVF portal  [400f5a76aa3d48d140fb020897c99df1]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [754,855 intervals]
+  PASS  ragged intervals occur only at contig ends  [23 ragged, 23 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [511,322 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 3.39, 2,949,852 of 6,771,430 = 43.6%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [456 bp; 101 bp reads would give mean 0.41, observed 1.55]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-7  IgG rep1  ->  IGVFFI6525PXBV
+  PASS  byte-identical to the file on the IGVF portal  [3739b832c723d848bfb7d75206af78af]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [722,018 intervals]
+  PASS  ragged intervals occur only at contig ends  [36 ragged, 36 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [433,476 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 5.57, 1,795,332 of 5,064,103 = 35.5%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [483 bp; 101 bp reads would give mean 0.41, observed 1.64]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+RA480-8  IgG rep2  ->  IGVFFI3258CYNL
+  PASS  byte-identical to the file on the IGVF portal  [5c5da05e06cc81d4a3e90e3c05433f02]
+  PASS  assembly is GRCh38  [chr1 = 248,956,422]
+  PASS  contig set is GRCh38 primary, no alts, no chrEBV  [194 contigs, 3,099,750,718 bp]
+  PASS  all contigs are UCSC-named
+  PASS  coverage spans the whole reference, nothing blacklisted out
+  PASS  every interval starts on the 25 bp grid  [743,147 intervals]
+  PASS  ragged intervals occur only at contig ends  [31 ragged, 31 at a contig end]
+  PASS  all values are integer multiples of one scale factor  [458,401 positive values]
+  PASS  a 10M target implies a possible dedup rate  [scale 4.64, 2,155,172 of 6,276,001 = 34.3%]
+  PASS  mean implies fragment-sized, not read-sized, counting units  [513 bp; 101 bp reads would give mean 0.41, observed 1.74]
+  n/a   duplicates were removed  [a bigWig cannot show it; RmDup in the filename, confirmed at the bench]
+  n/a   no MAPQ filter was applied  [not derivable; decides read-depth signal vs signal of unique reads]
+
+==============================================================================
+Normalization target: the dedup rate a target implies must be under 100%
+library     scale     10M implies    keep   20M keep
+RA480-1      3.62       2,762,431   43.7%      87.5%
+RA480-2      5.38       1,858,736   32.2%      64.4%
+RA480-3      2.80       3,571,429   47.5%      95.0%
+RA480-4      2.58       3,875,969   50.4%     100.9%  <- impossible
+RA480-5      3.09       3,236,246   42.2%      84.3%
+RA480-6      3.39       2,949,852   43.6%      87.1%
+RA480-7      5.57       1,795,332   35.5%      70.9%
+RA480-8      4.64       2,155,172   34.3%      68.7%
+  PASS  
+a 20M target is excluded outright by at least one library
+
+==============================================================================
+82 passed, 0 failed, 16 not verifiable from the files
