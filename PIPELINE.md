@@ -6,8 +6,9 @@ re-derived from the deposited bigWigs by `verify/verify.py`, and **[open]** is
 neither — a parameter the files constrain but the methods do not state.
 
 The published source is the Methods section *"Epigenetic data processing and
-preparation of model features"*. Read it as covering ATAC and CUT&RUN together; it
-does.
+preparation of model features"* of
+[doi:10.1038/s41588-025-02284-1](https://doi.org/10.1038/s41588-025-02284-1).
+Read it as covering ATAC and CUT&RUN together; it does.
 
 ## Inputs
 

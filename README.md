@@ -3,7 +3,7 @@
 Processing provenance for the Hs27 fibroblast CUT&RUN dataset submitted to the IGVF
 data portal, from *Comprehensive transcription factor perturbations recapitulate
 fibroblast transcriptional states* (Nat Genet 2025,
-`doi:10.1038/s41588-025-02284-1`).
+[doi:10.1038/s41588-025-02284-1](https://doi.org/10.1038/s41588-025-02284-1)).
 
 Eight signal files across four analysis sets: H3K4me3 (`IGVFDS5465EDQZ`), H3K27ac
 (`IGVFDS6938GALL`), H3K27me3 (`IGVFDS8522VRST`) and an IgG control
@@ -88,8 +88,11 @@ established independently of the filename.
 
 ## Related
 
+* Paper: [doi:10.1038/s41588-025-02284-1](https://doi.org/10.1038/s41588-025-02284-1)
+  · preprint [PMC11312553](https://pmc.ncbi.nlm.nih.gov/articles/PMC11312553/)
 * Data: Zenodo [10.5281/zenodo.15215216](https://doi.org/10.5281/zenodo.15215216),
-  `Hs27_CnR_Density_bigwigs_hg38_10mNorm.zip` · raw reads SRA `PRJNA1108254` ·
+  `Hs27_CnR_Density_bigwigs_hg38_10mNorm.zip` · raw reads SRA
+  [PRJNA1108254](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1108254) ·
   IGVF portal, Tom Norman lab, MSKCC
 * `igvf-atac` shares most of this pipeline — the published methods paragraph covers
   ATAC and CUT&RUN together. See the end of `PIPELINE.md` for what carries over and
