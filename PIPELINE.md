@@ -140,6 +140,19 @@ SoftwareVersion is new even where the Software object exists.
 
 Only steps 1, 2, 3 and 5 are needed for what is currently submitted.
 
+Suggested `step_label` values follow the portal's existing convention of a lab prefix
+(`beer-tf-chip-seq-alignment-step`): `norman-cutrun-read-trimming-step`,
+`-alignment-step`, `-duplicate-removal-step`, `-peak-calling-step`,
+`-signal-generation-step`, `-replicate-merging-step`. The signal step's
+`analysis_step_types` are `file format conversion`, `signal generation` and
+`signal normalization`; peak calling outputs `peak quantifications`.
+
+For context on where this sits: four CUT&RUN AnalysisSets exist on the whole IGVF
+portal and all four are the ones this repository documents, so there is no CUT&RUN
+precedent to follow. The nearest released analogue is histone ChIP-seq from Michael
+Beer's lab, whose signal files also use `content_type: read-depth signal` — though
+theirs are unnormalized where these are scaled to 10 million.
+
 ## What carries over to `igvf-atac`
 
 **ATAC-seq** is covered by the same methods paragraph — steps 1 through 5 apply
