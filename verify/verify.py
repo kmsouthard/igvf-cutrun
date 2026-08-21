@@ -215,9 +215,11 @@ def main():
                 f"{NORM_TARGET * (101 + BIN_BP) / GENOME_BP:.2f}, observed {m['mean']:.2f}")
 
         r.na("duplicates were removed",
-             "a bigWig cannot show it; RmDup in the filename, confirmed at the bench")
+             "a bigWig cannot show it; the BAM @PG records "
+             "MarkDuplicates REMOVE_DUPLICATES=true -- see results/RA480_pipeline_headers.txt")
         r.na("no MAPQ filter was applied",
-             "not derivable; decides read-depth signal vs signal of unique reads")
+             "a bigWig cannot show it, and the claim now looks wrong: MAPQ >= 10 "
+             "reproduces the scale factors to 0.1-2.7% -- see verify/fragcount.py")
 
         rows.append((lib, m["scale"], depth, keep, keep2, entity))
 

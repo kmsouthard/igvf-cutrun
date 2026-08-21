@@ -1,0 +1,297 @@
+# Pipeline provenance for Hs27 CUT&RUN (RA480, core Project 14046 AP)
+# Read from the BAM @PG headers and the MACS2 _peaks.xls command lines, 2026-08-21.
+# Source: the sequencing core delivery for Project 14046 AP (August 2026 reprocessing).
+# Absolute facility paths replaced with <placeholders>; tool names, versions and
+# parameters are verbatim.
+
+################ BAM @PG / @HD headers ################
+##### CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K27ac_rep1/CnR_HS27_WT_H3K27ac_rep1_IGO_14046_AP_5_S162_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K27ac_rep1/CnR_HS27_WT_H3K27ac_rep1_IGO_14046_AP_5_S162_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=6,915,574  unmapped_w_coor=107,058  no_coor=1,526,872
+
+##### CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K27ac_rep2/CnR_HS27_WT_H3K27ac_rep2_IGO_14046_AP_6_S163_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K27ac_rep2/CnR_HS27_WT_H3K27ac_rep2_IGO_14046_AP_6_S163_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=6,303,945  unmapped_w_coor=62,749  no_coor=1,335,790
+
+##### CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K27me3_rep1/CnR_HS27_WT_H3K27me3_rep1_IGO_14046_AP_3_S160_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K27me3_rep1/CnR_HS27_WT_H3K27me3_rep1_IGO_14046_AP_3_S160_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=7,477,672  unmapped_w_coor=84,331  no_coor=647,504
+
+##### CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K27me3_rep2/CnR_HS27_WT_H3K27me3_rep2_IGO_14046_AP_4_S161_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K27me3_rep2/CnR_HS27_WT_H3K27me3_rep2_IGO_14046_AP_4_S161_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=8,087,898  unmapped_w_coor=71,895  no_coor=180,996
+
+##### CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K4me3_rep1/CnR_HS27_WT_H3K4me3_rep1_IGO_14046_AP_1_S147_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K4me3_rep1/CnR_HS27_WT_H3K4me3_rep1_IGO_14046_AP_1_S147_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=6,030,010  unmapped_w_coor=89,386  no_coor=1,111,286
+
+##### CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_H3K4me3_rep2/CnR_HS27_WT_H3K4me3_rep2_IGO_14046_AP_2_S148_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_H3K4me3_rep2/CnR_HS27_WT_H3K4me3_rep2_IGO_14046_AP_2_S148_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=4,064,712  unmapped_w_coor=88,259  no_coor=3,467,862
+
+##### CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_IgG_rep1/CnR_HS27_WT_IgG_rep1_IGO_14046_AP_7_S149_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_IgG_rep1/CnR_HS27_WT_IgG_rep1_IGO_14046_AP_7_S149_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_IgG_rep1.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=4,040,539  unmapped_w_coor=98,974  no_coor=1,857,096
+
+##### CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup.bam
+@HD	VN:1.5	SO:coordinate
+@PG	ID:bowtie2	PN:bowtie2	VN:2.3.4.1	CL:"bowtie2-align-s --wrapper basic-0 --local -p 6 -x <bowtie2-index>/hg38 -1 <workdir>/CnR_HS27_WT_IgG_rep2/CnR_HS27_WT_IgG_rep2_IGO_14046_AP_8_S150_L004_R1_001_val_1.fq.gz -2 <workdir>/CnR_HS27_WT_IgG_rep2/CnR_HS27_WT_IgG_rep2_IGO_14046_AP_8_S150_L004_R2_001_val_2.fq.gz"
+@PG	ID:MarkDuplicates	VN:2.16.0-1-g763d98e-SNAPSHOT	CL:MarkDuplicates INPUT=[CnR_HS27_WT_IgG_rep2.hg38.sorted.bam] OUTPUT=CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup.bam METRICS_FILE=dup.txt REMOVE_DUPLICATES=true ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true ADD_PG_TAG_TO_READS=true DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false	PN:MarkDuplicates
+-- n_ref=194  total_bp=3,099,750,718
+-- mapped=4,819,006  unmapped_w_coor=167,788  no_coor=2,568,928
+
+
+################ MACS2 _peaks.xls headers ################
+##### MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K27ac_rep1.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 94 bps
+# total tags in treatment: 3124448
+# tags after filtering in treatment: 3089633
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K27ac_rep2.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 98 bps
+# total tags in treatment: 2836355
+# tags after filtering in treatment: 2814713
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K27me3_rep1.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 100 bps
+# total tags in treatment: 3367150
+# tags after filtering in treatment: 3333887
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K27me3_rep2.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 100 bps
+# total tags in treatment: 3688253
+# tags after filtering in treatment: 3652843
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K4me3_rep1.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 96 bps
+# total tags in treatment: 2625444
+# tags after filtering in treatment: 2479814
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.06
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_H3K4me3_rep2.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 97 bps
+# total tags in treatment: 1727547
+# tags after filtering in treatment: 1651737
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.04
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_IgG_rep1.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 99 bps
+# total tags in treatment: 1714680
+# tags after filtering in treatment: 1694195
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
+##### MACS2_vsInput_CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup_peaks.xls
+# This file is generated by MACS version 2.1.2
+# Command line: callpeak -t CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup.bam -c <facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam -f BAM -g hs --nomodel --pvalue 0.001 -n MACS2_vsInput_CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup
+# ARGUMENTS LIST:
+# name = MACS2_vsInput_CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup
+# format = BAM
+# ChIP-seq file = ['CnR_HS27_WT_IgG_rep2.hg38.sorted.RmDup.bam']
+# control file = ['<facility-resources>/humanCD34_input.hg38.sorted.RmDup.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# pvalue cutoff = 1.00e-03
+# qvalue will not be calculated and reported as -1 in the final output.
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+# tag size is determined as 91 bps
+# total tags in treatment: 1877592
+# tags after filtering in treatment: 1851000
+# maximum duplicate tags at the same position in treatment = 1
+# Redundant rate in treatment: 0.01
+# total tags in control: 55384013
+# tags after filtering in control: 55335791
+# maximum duplicate tags at the same position in control = 1
+# Redundant rate in control: 0.00
+
